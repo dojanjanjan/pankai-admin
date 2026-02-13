@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "skills": {
+    "gmail": {
+      "version": "1.0.6",
+      "installedAt": 1770904539698
+    },
+    "google-sheets": {
+      "version": "1.0.6",
+      "installedAt": 1770906039335
+    }
+  }
+}
