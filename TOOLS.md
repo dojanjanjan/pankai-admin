@@ -37,4 +37,6 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 ---
 
-Add whatever helps you do your job. This is your cheat sheet.
+### Messaging
+- YunAI WhatsApp: +49 1522 4109445
+- YunAI Gmail: yunai.youngcreatives@gmail.com

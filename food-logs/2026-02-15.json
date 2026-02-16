@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-15",
+  "meals": [
+    {
+      "name": "Sternchensuppe (kleine Portion)",
+      "est_kcal": 150
+    },
+    {
+      "name": "Spaghetti Frutti di Mare",
+      "est_kcal": 550
+    },
+    {
+      "name": "Proteinriegel (Lidl)",
+      "est_kcal": 180,
+      "protein": 22
+    }
+  ],
+  "total_kcal": 880
+}

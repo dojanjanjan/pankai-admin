@@ -1,0 +1,122 @@
+{
+  "parent": { "database_id": "3062bce7-49d6-8092-b8e1-c388d91de1ef" },
+  "properties": {
+    "Name": { "title": [{ "text": { "content": "Referenzen für Gastro-Landingpage" } }] },
+    "Status": { "select": { "name": "In Progress" } },
+    "Tags": { "multi_select": [{ "name": "Gastro" }, { "name": "Lead Magnet" }, { "name": "Case Study" }] }
+  },
+  "children": [
+    {
+      "object": "block",
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [{ "text": { "content": "Referenz-Sektion Entwurf: YC Gastronomie (Q1 2026)" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [{ "type": "text", "text": { "content": "Vom digitalen Onepager bis zum vollautomatisierten System – Gastronomie-Erfolge, die für sich sprechen." }, "annotations": { "bold": true } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [{ "text": { "content": "1. Das Flagship: Grande Beach Café" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [{ "text": { "content": "Fokus: Unabhängigkeit & Skalierung. Weg von Portalen, hin zu 100% eigener Kontrolle." } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [{ "text": { "content": "Features: Full-Stack Design, AI-Integration, automatisiertes Marketing." } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [{ "text": { "content": "Link: " } }, { "text": { "content": "grandebeach-cafe.de", "link": { "url": "https://grandebeach-cafe.de" } } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [{ "text": { "content": "2. Die Fokus-Lösungen: Effizienz trifft Design" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [{ "text": { "content": "A. Bulgogi Restaurant (Norderstedt)" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [{ "text": { "content": "Konzept: Erlebnis-Gastronomie (Korean BBQ). Highlight: Klare Kommunikation des All-You-Can-Eat Erlebnisses." } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [{ "text": { "content": "Link: " } }, { "text": { "content": "bulgogi-restaurant.de", "link": { "url": "https://bulgogi-restaurant.de" } } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [{ "text": { "content": "B. Charm Thai Street Kitchen" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [{ "text": { "content": "Konzept: Authentische Nachbarschafts-Küche (Eimsbüttel). Highlight: Lokale SEO-Stärke." } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [{ "text": { "content": "Link: " } }, { "text": { "content": "charm-thai.de", "link": { "url": "https://charm-thai.de" } } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [{ "text": { "content": "C. eathai" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [{ "text": { "content": "Konzept: Modernes Thai-Dining. Highlight: Cleaner, professioneller Web-Auftritt." } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [{ "text": { "content": "Link: " } }, { "text": { "content": "eathai-hamburg.de", "link": { "url": "https://eathai-hamburg.de" } } }]
+      }
+    }
+  ]
+}

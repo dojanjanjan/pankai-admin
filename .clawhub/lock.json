@@ -8,6 +8,14 @@
     "google-sheets": {
       "version": "1.0.6",
       "installedAt": 1770906039335
+    },
+    "nutritionist": {
+      "version": "1.0.0",
+      "installedAt": 1771189156332
+    },
+    "food": {
+      "version": "1.0.1",
+      "installedAt": 1771189162471
     }
   }
 }

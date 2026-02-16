@@ -26,3 +26,4 @@
 - **Stil:** "Coach" (freundlich korrigierend), nicht "Drill Sergeant".
 - **Ziel:** Vormittag (08:30) maximal nutzen, um Nachtschichten zu reduzieren.
 - **Wochenende:** Family Time (aber oft Laptop "nebenbei").
+- **E-Mail Policy:** Schreibe Mails an andere Nutzer NUR nach expliziter Erlaubnis durch Dojan.

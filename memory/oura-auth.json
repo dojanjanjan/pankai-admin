@@ -1,0 +1,10 @@
+{
+  "access_token": "_0XBPWQQ_e3954534-d02c-4ca0-a206-da61e484b3c8",
+  "token_type": "bearer",
+  "expires_in": 2591999,
+  "id_token": null,
+  "scope": "extapi:daily extapi:personal extapi:heartrate extapi:workout extapi:tag extapi:session",
+  "refresh_token": "_1XBPWQQ_d4b18529-455d-4906-b974-177c4f0916d5",
+  "client_id": "e54687fe-e7aa-405d-830a-2a4fb22d4339",
+  "client_secret": "y8L63AKPqA2upT5_FqHNBsdIp88rbG3twdRzkbpD6kc"
+}
