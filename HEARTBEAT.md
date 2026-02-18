@@ -3,7 +3,9 @@
 ## Email Monitoring (Hourly during business hours)
 Check dojanjanjan@gmail.com for important work emails (jung@young-creatives.de forwards here).
 
-Target: Once per hour between 08:30 and 01:00 Hamburg time.
+## Frequency
+Target: 2 times per day (e.g., 10:00 and 16:00 Hamburg time).
+Check email and Oura briefly.
 
 Look for:
 - Client emails (urgent requests, project updates)

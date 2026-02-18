@@ -4,7 +4,10 @@
 - **Gastro Project Headline:** "Starten Sie heute mit einem Onepager – skalierbar bis zum vollautomatisierten System." (Updated 2026-02-13)
 ## System Setup / Configuration (Updated 2026-02-14)
 - **WhatsApp:** YunAI has its own number (+49 1522 4109445). VIP Group with Dojan established.
-- **Email Strategy:** YunAI monitors `yunai@young-creatives.de` (IONOS). Dojan sets up forwarders from other relevant accounts (e.g., `dojanjanjan@gmail.com`) to this central mailbox for automated monitoring.
+- **Email Strategy:** YunAI uses `yunai@young-creatives.de` (IONOS) for all outgoing correspondence.
+    - **Signature:** Official "YC AI Assistant" signature with "Beste Grüße, YunAI" prefix (template: `memory/email-signature.md`).
+    - **Tracking:** All outgoing emails include `jung@young-creatives.de` as BCC and are explicitly uploaded to the IONOS "Sent" folder via IMAP to ensure visibility in mail clients.
+- **Gmail:** `yunai.youngcreatives@gmail.com` is used for incoming forwarders and monitoring.
 - **Oura Integration:** Successfully connected via OAuth2. Refresh token stored in `memory/oura-auth.json`. Daily briefings at 08:30 are automated.
 - **Playwright:** Installed on VPS. Successfully used for automated form testing.
 - **GitHub:** Code corrections for form field IDs (Names/IDs added) pushed to `main`.

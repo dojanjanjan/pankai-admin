@@ -1,10 +1,7 @@
 {
-  "history": [
-    {
-      "date": "2026-02-15",
-      "tokensIn": 1600000,
-      "tokensOut": 6500,
-      "note": "Final log for Feb 15. High activity: Lackkonzept Netlify/GitHub analysis, Notion task management, Oura integration setup, and Food Tracker initialization."
-    }
-  ]
+  "date": "2026-02-17",
+  "total_tokens_in": 378000,
+  "total_tokens_out": 112,
+  "context_usage_percent": 54,
+  "timestamp": 1771369560
 }

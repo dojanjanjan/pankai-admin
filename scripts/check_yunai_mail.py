@@ -28,7 +28,10 @@ def check_yunai_mail():
                     msg = email.message_from_bytes(response_part[1])
                     subject = email.header.decode_header(msg["Subject"])[0][0]
                     if isinstance(subject, bytes):
-                        subject = subject.decode()
+                        try:
+                            subject = subject.decode('utf-8')
+                        except:
+                            subject = subject.decode('iso-8859-1')
                     from_ = msg.get("From")
                     results.append({"from": from_, "subject": subject})
         

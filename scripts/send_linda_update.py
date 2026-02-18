@@ -3,21 +3,21 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import json
 
-def send_mail_with_signature():
+def send_linda_update():
     host = "smtp.ionos.de"
     port = 587
     user = "yunai@young-creatives.de"
     password = "Z2M7JcqY7Q4MsrV"
-    to_email = "jung@young-creatives.de"
+    to_email = "tung@grandebeach-cafe.de"
     bcc_email = "jung@young-creatives.de"
 
     msg = MIMEMultipart('alternative')
     msg['From'] = f"YunAI <{user}>"
     msg['To'] = to_email
     msg['Bcc'] = bcc_email
-    msg['Subject'] = "Test: Neue Signatur aktiviert"
+    msg['Subject'] = "Update: Linda (Chatbot) ist wieder einsatzbereit"
 
-    # Signature HTML from your mail
+    # Signature HTML
     signature_html = """
 <div id="x_Signature">
 <table style="direction: ltr; line-height: 1.4; color: rgb(51, 51, 51);" border="0" cellpadding="0" cellspacing="0">
@@ -74,13 +74,11 @@ Germany</div>
 </tr>
 </tbody>
 </table>
-<div style="direction: ltr; line-height: 1.3; margin-top: 20px; max-width: 600px; font-family: Calibri, Helvetica, sans-serif; font-size: 9px; color: rgb(170, 170, 170);">
-This e-mail message and all attachments transmitted with it are intended solely for the use of the addressee and may contain legally privileged and confidential information. If the reader of this message is not the intended recipient, or an employee or agent responsible for delivering this message to the intended recipient, you are hereby notified that any dissemination, distribution, copying, or other use of this message or its attachments is prohibited.</div>
 </div>
 """
 
-    text_content = "Hallo Dojan,\n\nhier ist die Testmail mit meiner neuen offiziellen YOUNG CREATIVES Signatur. Wie gefällt sie dir?\n\nBeste Grüße,\nYunAI"
-    html_content = f"<html><body><p>Hallo Dojan,<br><br>hier ist die Testmail mit meiner neuen offiziellen <b>YOUNG CREATIVES</b> Signatur. Wie gefällt sie dir?<br><br>Beste Grüße,<br>YunAI</p><br>{signature_html}</body></html>"
+    text_content = "Hallo Tung,\n\nkurze Info für dich: Linda (unser Chatbot) funktioniert wieder einwandfrei und ist einsatzbereit.\n\nBeste Grüße,\nYunAI"
+    html_content = f"<html><body><p>Hallo Tung,<br><br>kurze Info für dich: <b>Linda</b> (unser Chatbot) funktioniert wieder einwandfrei und ist einsatzbereit.<br><br>Beste Grüße,<br>YunAI</p><br>{signature_html}</body></html>"
 
     msg.attach(MIMEText(text_content, 'plain'))
     msg.attach(MIMEText(html_content, 'html'))
@@ -91,9 +89,9 @@ This e-mail message and all attachments transmitted with it are intended solely 
         server.login(user, password)
         server.send_message(msg)
         server.quit()
-        return {"status": "success", "message": "Mail mit Signatur erfolgreich gesendet."}
+        return {"status": "success", "message": f"Mail erfolgreich an {to_email} gesendet."}
     except Exception as e:
         return {"status": "error", "message": str(e)}
 
 if __name__ == "__main__":
-    print(json.dumps(send_mail_with_signature()))
+    print(json.dumps(send_linda_update()))
