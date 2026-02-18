@@ -3,6 +3,7 @@
 - **Dojan's Focus (Q1 2026):** Gastro Lead Magnet (Unabhängigkeit von Portalen), Real Estate AI App, Healthcare Trust-Signal.
 - **Gastro Project Headline:** "Starten Sie heute mit einem Onepager – skalierbar bis zum vollautomatisierten System." (Updated 2026-02-13)
 ## System Setup / Configuration (Updated 2026-02-14)
+- **Image Generation:** Always use Nano Banana Pro (Gemini 3 Pro Image) for image requests and ensure the file is sent directly via the messaging tool. (Updated 2026-02-18)
 - **WhatsApp:** YunAI has its own number (+49 1522 4109445). VIP Group with Dojan established.
 - **Email Strategy:** YunAI uses `yunai@young-creatives.de` (IONOS) for all outgoing correspondence.
     - **Signature:** Official "YC AI Assistant" signature with "Beste Grüße, YunAI" prefix (template: `memory/email-signature.md`).
