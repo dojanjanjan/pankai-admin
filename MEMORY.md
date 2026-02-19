@@ -15,7 +15,7 @@
 
 ## Core Client/Strategy Decisions (Updated 2026-02-14)
 - **YC Social:** New sub-brand for Social Media Marketing. Focus Hamburg / Asian Gastro. Pitch & Strategy documented in Notion.
-- **Email Policy:** NO emails to external parties without Dojan's explicit permission. Internal communication (between linked accounts) is allowed.
+- **Email Policy:** NO emails to external parties without Dojan's explicit permission. Internal communication (between linked accounts) is allowed. For technical fixes or drafts, send only to Dojan (jung@young-creatives.de) for review. (Updated 2026-02-18)
 
 ## Project Progress & Bugs
 - **Gastro Landing Page:** References (Grande Beach, Bulgogi, etc.) drafted and pushed to Notion.
