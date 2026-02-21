@@ -1,0 +1,20 @@
+{
+  "email": "yunai@young-creatives.de",
+  "password": "Z2M7JcqY7Q4MsrV",
+  "imap": {
+    "host": "imap.ionos.de",
+    "port": 993,
+    "secure": true
+  },
+  "smtp": {
+    "host": "smtp.ionos.de",
+    "port": 465,
+    "secure": true
+  },
+  "github": {
+    "username": "YunAI-YC",
+    "password": "AlsterCliff_2026",
+    "email": "yunai@young-creatives.de",
+    "token": "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"
+  }
+}

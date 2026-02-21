@@ -24,7 +24,25 @@
 - **Oura Integration:** Successfully re-connected via OAuth2 (2026-02-19). Tokens stored in `memory/oura-auth.json`. Daily briefings at 08:30 are automated.
 - **Playwright:** Installed on VPS. Successfully used for automated form testing.
 - **GitHub:** Code corrections for form field IDs (Names/IDs added) pushed to `main`.
-- **Reporting:** Include token usage stats with every message until further notice. (Updated 2026-02-19)
+- **Reporting:** Always include the full session status at the end of EVERY message using the following format:
+    ```
+    📊 **OpenClaw Status**
+    🧠 Model: {model}
+    🧮 Tokens: {in} / {out}
+    💰 Cost: {estimated_cost}
+    📚 Context: {current}/{max} ({percentage}%)
+    🕒 Time: {current_time_hamburg}
+    ```
+    (Updated 2026-02-21)
+- **Config Safety Policy (2026-02-21):** To prevent Gateway crashes, YunAI will:
+    1. Never edit `openclaw.json` directly without running `openclaw doctor` afterwards to validate.
+    2. Prefer `config.patch` via API/CLI over manual file writes.
+    3. Always create a backup (`openclaw.json.bak`) before any changes.
+    4. Verify changes with `openclaw doctor --fix` if errors are detected.
+- **Cost Control & Session Hygiene (2026-02-21):** To keep API costs low (especially with Sonnet 4.6), YunAI will:
+    1. Perform a `/reset` regularly, especially after large context analysis (reading many files or directories).
+    2. Be surgical with file reads; avoid `ls -R` or `cat` on massive directory trees unless necessary.
+    3. Log daily token usage to `memory/token-usage.json` before session resets.
 - **Timezone:** Hamburg (UTC+1/CET). System runs on UTC, offsets applied manually.
 
 ## Core Client/Strategy Decisions (Updated 2026-02-14)
@@ -34,6 +52,8 @@
 ## Project Links (Deployment)
 - **PANKAI Landingpage:** [https://pankai-yunai.netlify.app/](https://pankai-yunai.netlify.app/)
 - **SHOGUN Landingpage:** [https://shogun-yunai.netlify.app/](https://shogun-yunai.netlify.app/)
+- **Cream of House Music:** [https://legendary-cajeta-3d20db.netlify.app](https://legendary-cajeta-3d20db.netlify.app) | GitHub: [YunAIYC/cream-house-music](https://github.com/YunAIYC/cream-house-music) — Edgy Modern Urban DJ Landingpage. Approved by Dojan ✅ (2026-02-20)
+- **Real Estate Creative:** [https://realestatecreative.netlify.app](https://realestatecreative.netlify.app) | GitHub: [dojanjanjan/realestate-creatives_2026-02-10](https://github.com/dojanjanjan/realestate-creatives_2026-02-10) — ⚠️ NUR NETLIFY! Vercel wurde gelöscht (2026-02-20).
 
 ## Project Progress & Bugs
 - **Gastro Landing Page:** References (Grande Beach, Bulgogi, etc.) drafted and pushed to Notion.

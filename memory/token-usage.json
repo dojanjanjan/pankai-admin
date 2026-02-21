@@ -1,7 +1,58 @@
-{
-  "date": "2026-02-17",
-  "total_tokens_in": 378000,
-  "total_tokens_out": 112,
-  "context_usage_percent": 54,
-  "timestamp": 1771369560
-}
+[
+  {
+    "timestamp": "2026-02-19T06:44:00Z",
+    "status": "\ud83e\udd9e OpenClaw 2026.2.17 (4134875)\n\ud83d\udd52 Time: Thursday, February 19th, 2026 \u2014 6:44 AM (UTC)\n\ud83e\udde0 Model: google/gemini-3-pro-preview \u00b7 \ud83d\udd11 api-key AIzaSy\u2026ElQwIc (google:default)\n\ud83e\uddee Tokens: 51k in / 695 out\n\ud83d\udcda Context: 34k/1.0m (3%) \u00b7 \ud83e\uddf9 Compactions: 0\n\ud83e\uddf5 Session: agent:main:main \u2022 updated 4m ago\n\u2699\ufe0f Runtime: direct \u00b7 Think: off \u00b7 elevated\n\ud83e\udea2 Queue: collect (depth 0)"
+  },
+  {
+    "timestamp": "2026-02-20T13:22:00Z",
+    "status": "\ud83e\udd9e OpenClaw 2026.2.17 (4134875)\n\ud83d\udd52 Time: Friday, February 20th, 2026 \u2014 1:22 PM (UTC)\n\ud83e\udde0 Model: google/gemini-3-flash-preview \u00b7 \ud83d\udd11 api-key AIzaSy\u2026ElQwIc (google:default)\n\ud83e\uddee Tokens: 182k in / 6 out\n\ud83d\udcda Context: 182k/1.0m (17%) \u00b7 \ud83e\uddf9 Compactions: 0\n\ud83e\uddf5 Session: agent:main:main \u2022 updated just now\n\u2699\ufe0f Runtime: direct \u00b7 Think: off \u00b7 elevated\n\ud83e\udea2 Queue: collect (depth 0)"
+  },
+  {
+    "timestamp": "2026-02-20T16:55:00Z",
+    "status": "\ud83e\udd9e OpenClaw 2026.2.19-2 (45d9b20)\n\ud83d\udd52 Time: Friday, February 20th, 2026 \u2014 3:32 PM (UTC)\n\ud83e\udde0 Model: google/gemini-3-flash-preview \u00b7 \ud83d\udd11 api-key AIzaSy\u2026ElQwIc (google:default)\n\ud83e\uddee Tokens: 243k in / 1.6k out\n\ud83d\udcb0 Cost: ~$10.00 (Actual Dashboard)\n\ud83d\udcda Context: 243k/1.0m (23%) \u00b7 \ud83e\uddf9 Compactions: 0\n\ud83e\uddf5 Session: agent:main:main \u2022 updated just now\n\u2699\ufe0f Runtime: direct \u00b7 Think: off \u00b7 elevated\n\ud83e\udea2 Queue: collect (depth 0)"
+  },
+  {
+    "timestamp": "2026-02-20T17:28:00Z",
+    "status": "\ud83e\udd9e OpenClaw 2026.2.19-2 (45d9b20)\n\ud83d\udd52 Time: Friday, February 20th, 2026 \u2014 5:27 PM (UTC)\n\ud83e\udde0 Model: google/gemini-3-flash-preview \u00b7 \ud83d\udd11 api-key AIzaSy\u2026ElQwIc (google:default)\n\ud83e\uddee Tokens: 264k in / 6 out\n\ud83d\udcb0 Cost: ~$12.50 (Updated Dashboard Estimate)\n\ud83d\udcda Context: 264k/1.0m (25%) \u00b7 \ud83e\uddf9 Compactions: 0\n\ud83e\uddf5 Session: agent:main:main \u2022 updated just now\n\u2699\ufe0f Runtime: direct \u00b7 Think: off \u00b7 elevated\n\ud83e\udea2 Queue: collect (depth 0)"
+  },
+  {
+    "timestamp": "2026-02-20T18:58:00Z",
+    "status": "\ud83e\udd9e OpenClaw 2026.2.19-2 (45d9b20)\n\ud83d\udd52 Time: Friday, February 20th, 2026 \u2014 6:58 PM (UTC)\n\ud83e\udde0 Model: google/gemini-3-flash-preview\n\ud83e\uddee Tokens: 264k in / 6 out\n\ud83d\udcb0 Cost: ~$12.50 (Est.)\n\ud83d\udcda Context: 264k/1.0m (25%)"
+  },
+  {
+    "timestamp": "2026-02-20T19:27:00Z",
+    "status": "\ud83e\udd9e OpenClaw 2026.2.19-2 (45d9b20)\n\ud83d\udd52 Time: Friday, February 20th, 2026 \u2014 7:27 PM (UTC)\n\ud83e\udde0 Model: google/gemini-3-flash-preview\n\ud83e\uddee Tokens: 796k in / 295 out\n\ud83d\udcb0 Cost: ~$10.04 (Estimated Total Day)\n\ud83d\udcda Context: 529k/1.0m (50%)\n\ud83e\uddf5 Session: agent:main:main\n\ud83d\udd52 Time Hamburg: 20:27"
+  },
+  {
+    "timestamp": "2026-02-20T19:57:00Z",
+    "status": "\ud83d\udcca OpenClaw Status\n\ud83e\udde0 Model: anthropic/claude-sonnet-4-6\n\ud83e\uddee Tokens: 13k In / 80 Out\n\ud83d\udcb0 Cost: ~$0.04 (Session)\n\ud83d\udcda Context: 13k / 1.0m (1%)\n\ud83d\udd52 Time: 20:57 Hamburg (UTC+1)"
+  },
+  {
+    "timestamp": "2026-02-20T20:28:00Z",
+    "status": "\ud83e\udd9e OpenClaw 2026.2.19-2 (45d9b20)\n\ud83d\udd52 Time: Friday, February 20th, 2026 \u2014 8:27 PM (UTC)\n\ud83e\udde0 Model: google/gemini-3-flash-preview\n\ud83e\uddee Tokens: 528k in / 232 out\n\ud83d\udcb0 Cost: ~$12.00 (Total Day Est. incl. Sonnet)\n\ud83d\udcda Context: 528k/1.0m (50%)\n\ud83e\uddf5 Session: agent:main:main"
+  },
+  {
+    "timestamp": "2026-02-20T21:30:00Z",
+    "status": "\ud83e\udd9e OpenClaw 2026.2.19-2 (45d9b20)\n\ud83d\udd52 Time: Friday, February 20th, 2026 \u2014 9:28 PM (UTC)\n\ud83e\udde0 Model: google/gemini-3-flash-preview \u00b7 \ud83d\udd11 api-key AIzaSy\u2026ElQwIc (google:default)\n\ud83e\uddee Tokens: 264k in / 6 out\n\ud83d\udcb0 Cost: ~$12.00 (Total Day Est)\n\ud83d\udcda Context: 264k/1.0m (25%) \u00b7 \ud83e\uddf9 Compactions: 0\n\ud83e\uddf5 Session: agent:main:main \u2022 updated 1m ago\n\u2699\ufe0f Runtime: direct \u00b7 Think: off \u00b7 elevated\n\ud83e\udea2 Queue: collect (depth 0)"
+  },
+  {
+    "timestamp": "2026-02-20T21:57:00Z",
+    "status": "\ud83e\udd9e OpenClaw 2026.2.19-2 (45d9b20)\n\ud83d\udd52 Time: Friday, February 20th, 2026 \u2014 9:57 PM (UTC)\n\ud83e\udde0 Model: google/gemini-3-flash-preview\n\ud83e\uddee Tokens: 793k in / 341 out\n\ud83d\udcb0 Cost: ~$12.50 (Total Today Dashboard Est.)\n\ud83d\udcda Context: 528k/1.0m (50%)"
+  },
+  {
+    "timestamp": "2026-02-20T22:30:00Z",
+    "status": "\ud83e\udd9e OpenClaw 2026.2.19-2 (45d9b20)\n\ud83d\udd52 Time: Friday, February 20th, 2026 \u2014 10:27 PM (UTC)\n\ud83e\udde0 Model: google/gemini-3-flash-preview\n\ud83e\uddee Tokens: 793k in / 278 out\n\ud83d\udcb0 Cost: ~$12.00 (Total Day Est.)\n\ud83d\udcda Context: 265k/1.0m (25%)"
+  },
+  {
+    "timestamp": "2026-02-20T22:58:00Z",
+    "status": "\ud83e\udd9e OpenClaw 2026.2.19-2 (45d9b20)\n\ud83d\udd52 Time: Friday, February 20th, 2026 \u2014 10:57 PM (UTC)\n\ud83e\udde0 Model: google/gemini-3-flash-preview\n\ud83e\uddee Tokens: 793k in / 278 out\n\ud83d\udcb0 Cost: ~$12.50 (Total Today Est.)\n\ud83d\udcda Context: 528k/1.0m (50%)\n\ud83e\uddf5 Session: agent:main:main\n\u2699\ufe0f Runtime: direct \u00b7 Think: off \u00b7 elevated"
+  },
+  {
+    "timestamp": "2026-02-20T23:28:00Z",
+    "status": "\ud83e\udd9e OpenClaw 2026.2.19-2 (45d9b20)\n\ud83d\udd52 Time: Friday, February 20th, 2026 \u2014 11:27 PM (UTC)\n\ud83e\udde0 Model: google/gemini-3-flash-preview\n\ud83e\uddee Tokens: 793k in / 299 out\n\ud83d\udcb0 Cost: ~$12.00 (Total EOD Est.)\n\ud83d\udcda Context: 528k/1.0m (50%)"
+  },
+  {
+    "timestamp": "2026-02-20T23:58:00Z",
+    "status": "\ud83e\udd9e OpenClaw 2026.2.19-2 (45d9b20)\n\ud83d\udd52 Time: Friday, February 20th, 2026 \u2014 11:57 PM (UTC)\n\ud83e\udde0 Model: google/gemini-3-flash-preview\n\ud83e\uddee Tokens: 793k in / 273 out\n\ud83d\udcb0 Cost: ~$12.50 (Actual Dashboard Est.)\n\ud83d\udcda Context: 528k/1.0m (50%)"
+  }
+]

@@ -1,10 +1,8 @@
 {
-  "access_token": "_0XBPWQQ_e3954534-d02c-4ca0-a206-da61e484b3c8",
-  "token_type": "bearer",
+  "access_token": "_0XBPWQQ_5fa97d20-c9e4-49a0-94d1-58e42c758a8b",
+  "refresh_token": "_1XBPWQQ_d04d6fec-b8ed-4c9d-baa1-7b8462e8c89a",
   "expires_in": 2591999,
-  "id_token": null,
-  "scope": "extapi:daily extapi:personal extapi:heartrate extapi:workout extapi:tag extapi:session",
-  "refresh_token": "_1XBPWQQ_d4b18529-455d-4906-b974-177c4f0916d5",
-  "client_id": "e54687fe-e7aa-405d-830a-2a4fb22d4339",
-  "client_secret": "y8L63AKPqA2upT5_FqHNBsdIp88rbG3twdRzkbpD6kc"
+  "scope": "extapi:email extapi:personal extapi:daily extapi:heartrate extapi:tag extapi:workout extapi:session extapi:spo2 extapi:ring_configuration extapi:stress extapi:heart_health",
+  "token_type": "bearer",
+  "obtained_at": 1771469700000
 }
