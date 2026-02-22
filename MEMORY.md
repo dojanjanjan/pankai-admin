@@ -49,6 +49,24 @@
 - **YC Social:** New sub-brand for Social Media Marketing. Focus Hamburg / Asian Gastro. Pitch & Strategy documented in Notion.
 - **Email Policy:** NO emails to external parties without Dojan's explicit permission. Internal communication (between linked accounts) is allowed. For technical fixes or drafts, send only to Dojan (jung@young-creatives.de) for review. (Updated 2026-02-18)
 
+## Obsidian / Syncthing Setup (2026-02-21)
+- **Vault:** `/root/YunAI Obsidian/` (VPS), `C:\Users\jung\Documents\YunAI Obsidian` (PC/Notebook)
+- **Syncthing Folder ID:** `YunAI Obsidian`
+- **VPS Device ID:** `FF27FMU-X7YKZFG-AQA2GMZ-7ULD4S4-PYT6XPG-H4TMYL4-LQLQWSO-BZ7KUQC`
+- **Notebook:** `2WDANWA-2CRDRHV-YJAZUUC-SL6ECOB-JA6543F-QL6ILE3-E7MG3KI-TA6UAAW`
+- **Desktop:** `MNW6HTM-RIDKYC7-IJKPP4N-G67BGMH-LHQSXTI-7GAZSEF-UY7AZW5-JZLZ6AC`
+- **S24 Ultra:** `6LWHH4J-5YFBNBG-Y7MDA5V-XW273Y7-PBDUVNC-2SKUHJM-RBK3RXP-MSR3FQ3` (connected, folder pending accept)
+- **Syncthing auf VPS:** läuft als `syncthing` binary (nicht systemd), Konfiguration via `syncthing cli`
+- YunAI schreibt proaktiv in Obsidian (Learnings, Daily Logs, Projekte) ohne explizite Aufforderung
+
+## YC Mission Dashboard (2026-02-21)
+- **URL:** https://yc-mission.netlify.app | **GitHub:** dojanjanjan/yc_mission | **Netlify Site ID:** 18bad78a-1454-4113-81d0-70a57868c9d5
+- **Kanban Layout:** 3 Spalten (Health & Body | Tasks | Personal & System) — Single-Page-Scroll, kein nested Scroll
+- **Oura:** `OURA_ACCESS_TOKEN` in Netlify gesetzt, Endpoint `daily_readiness` + `daily_sleep` korrekt
+- **Workouts:** Google Sheet `1Ox5_qxGjbjysjJgjXXqKj1Z0M2ws33xlCxJvFogEF0c` (öffentlich, kein API Key, Public CSV). Col-Offsets: name=+1, desc=+3, done=+7
+- **Deployment:** `netlify deploy --dir=.next --prod --site 18bad78a-1454-4113-81d0-70a57868c9d5` (Netlify CLI auf VPS verfügbar)
+- Build: `npm run build` im `/root/.openclaw/workspace/yc_mission/`
+
 ## Project Links (Deployment)
 - **PANKAI Landingpage:** [https://pankai-yunai.netlify.app/](https://pankai-yunai.netlify.app/)
 - **SHOGUN Landingpage:** [https://shogun-yunai.netlify.app/](https://shogun-yunai.netlify.app/)
