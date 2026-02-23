@@ -1,1 +1,20 @@
-{"date": "2026-02-21", "total_in": 307000, "total_out": 173, "estimated_cost_usd": 0.05, "context_pct": 19, "model": "google/gemini-3-flash-preview", "last_updated": "2026-02-21T23:37:00Z", "note": "Night Shift log. Switched to Gemini-Flash to save costs after high Claude usage earlier today."}
+[
+  {
+    "date": "2026-02-21",
+    "total_in": 205000,
+    "total_out": 326,
+    "estimated_cost_usd": 0.05,
+    "model": "google/gemini-3-flash-preview",
+    "last_updated": "2026-02-22T00:06:00Z",
+    "note": "Transitioned from Sonnet to Flash to control costs. Daily backup completed."
+  },
+  {
+    "date": "2026-02-22",
+    "total_in": 70000,
+    "total_out": 341,
+    "estimated_cost_usd": 0.21,
+    "model": "anthropic/claude-sonnet-4-6",
+    "last_updated": "2026-02-22T23:03:00Z",
+    "note": "Final session of the day. Using Sonnet 4.6."
+  }
+]
