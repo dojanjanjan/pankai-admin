@@ -16,5 +16,14 @@
     "model": "anthropic/claude-sonnet-4-6",
     "last_updated": "2026-02-22T23:03:00Z",
     "note": "Final session of the day. Using Sonnet 4.6."
+  },
+  {
+    "date": "2026-02-23",
+    "total_in": 18492000,
+    "total_out": 10068,
+    "estimated_cost_usd": 1.54,
+    "model": "google/gemini-3-flash-preview",
+    "last_updated": "2026-02-23T23:31:00Z",
+    "note": "Final token update for the day during heartbeat."
   }
 ]
