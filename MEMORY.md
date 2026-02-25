@@ -17,9 +17,9 @@
 - **Image Generation:** Always use Nano Banana Pro (Gemini 3 Pro Image) for image requests and ensure the file is sent directly via the messaging tool. (Updated 2026-02-18)
 - **WhatsApp:** YunAI has its own number (+49 1522 4109445). VIP Group with Dojan established.
 - **Email Strategy:** YunAI uses `yunai@young-creatives.de` (IONOS) for both **incoming monitoring** and **outgoing correspondence**.
-    - **Monitoring:** Periodic IMAP checks on `yunai@young-creatives.de` (forwarded from `jung@young-creatives.de`).
-    - **Signature:** Official "YC AI Assistant" signature with "Beste Grüße, YunAI" prefix (template: `memory/email-signature.md`).
-    - **Tracking:** All outgoing emails include `jung@young-creatives.de` as BCC and are explicitly uploaded to the IONOS "Sent" folder via IMAP.
+    - **Monitoring:** Direct IMAP via Python scripts (no himalaya/gmail skill — credentials in `memory/email-config.json`).
+    - **Signature:** HTML signature stored at `memory/email-signature.html` (Young Creatives branded, YC AI Assistant). ✅ Tested 2026-02-24.
+    - **Sending:** Python SMTP scripts using `memory/email-config.json` credentials. HTML emails with signature via MIMEMultipart.
 - **Gmail:** Deprecated for monitoring (replaced by direct IONOS IMAP).
 - **Oura Integration:** Successfully re-connected via OAuth2 (2026-02-19). Tokens stored in `memory/oura-auth.json`. Daily briefings at 08:30 are automated.
 - **Playwright:** Installed on VPS. Successfully used for automated form testing.
@@ -43,6 +43,12 @@
     2. Be surgical with file reads; avoid `ls -R` or `cat` on massive directory trees unless necessary.
     3. Log daily token usage to `memory/token-usage.json` before session resets.
 - **Timezone:** Hamburg (UTC+1/CET). System runs on UTC, offsets applied manually.
+
+## Identity & Roles (New 2026-02-24)
+- **Duality established:** YunAI (@YunAI_YC_bot) and SueAI (@SueAI_bot) now have distinct roles defined in `SOUL.md`.
+- **YunAI:** Creative Partner for Dojan (Focus: Design, UX, Gastro, Social).
+- **SueAI:** Infrastructure Expert for Tung/Dojan (Focus: Admin, Google, Mail, Systems).
+- **Protocol:** Each identity stays silent if the other is specifically tagged. They share the same memory and workspace but act in their respective "voices".
 
 ## Core Client/Strategy Decisions (Updated 2026-02-14)
 - **YC Social:** New sub-brand for Social Media Marketing. Focus Hamburg / Asian Gastro. Pitch & Strategy documented in Notion.

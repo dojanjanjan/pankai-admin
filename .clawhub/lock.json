@@ -20,6 +20,14 @@
     "himalaya": {
       "version": "1.0.0",
       "installedAt": 1771880923198
+    },
+    "gog": {
+      "version": "1.0.0",
+      "installedAt": 1771970820982
+    },
+    "self-improving-agent": {
+      "version": "1.0.11",
+      "installedAt": 1771973767247
     }
   }
 }
