@@ -1,16 +1,32 @@
 # MEMORY.md - Your Long-Term Memory
 
-## Current Project Priorities (Updated 2026-02-19)
+## Société Bangkok (New 2026-02-27)
+- **Chat Logging:** Aktiv für die Gruppe 'Société Bangkok' (File: `memory/chats/telegram_-1003352618860.md`).
+- **Concept:** Umbrella brand for exclusive events in Bangkok. Transitioning to a Social Web App (Community, Gamification, Incentives).
+- **Status:** Notion Setup complete. Logo & Moodboard generated.
+- **Notion:** [Société Bangkok](https://www.notion.so/Soci-t-Bangkok-3142bce749d6814ca046c8d01aa8c40e)
+- **Database:** [Tasks & Roadmap](https://www.notion.so/3142bce749d681a0af50c04f6b5b65f2)
+
+## Current Project Priorities (Updated 2026-02-27)
+- **La Dolce Vita - Pool Edition BKK:** Neues Projekt in Bangkok.
+    - **Status:** Repo angelegt (https://github.com/dojanjanjan/la-dolce-vita), Notion Seite & Datenbank erstellt.
+    - **Repository Lokal:** `/root/.openclaw/workspace/la-dolce-vita`
+- **HHeyBKK (Hamburg/Bangkok):** Strategische Partnerschaft mit Patrick Wilth.
+    - **Fit To Close (FTC):** Urban Performance Branding (NYC Vibe x Bangkok). Monatliche Events, 5-Stunden-Format, Playbook-Outcome.
+    - **Tagline:** LEAVE STRONGER. CLOSE FASTER. START MONDAY.
+    - **Status:** Tech-Pivot zu React/Next.js/Convex (aktuell noch Supabase im Code). Branding & Web-Assets (B&W NYC Fotos) in Arbeit. Lucid Event am 07.03.2026.
+    - **Repository:** https://github.com/dojanjanjan/fit-to-close-lp.git (lokal unter `/root/.openclaw/workspace/fit-to-close`)
+    - **Weitere Ideen:** The Secret Restaurant (Social Dining), SaaS für Ghostkitchens, Thai Street Food Festival (Heiligengeistfeld, Juni).
 - **Website Cleanup:** Glattziehen von `young-creatives.de`.
     - **Prio 1:** Gastronomie (Lead Magnet "Unabhängigkeit von Portalen").
     - **Prio 2:** Immobilien & YC Social.
     - **Prio 3:** Healthcare (Trust-Signal/Maintenance).
-- **Traffic Generation:** Launch von Google Ads Testkampagnen, begleitet von LinkedIn-Aktivitäten, um gezielt "Augen" auf die Gastro- und Immobilien-Pages zu bekommen.
-- **Product Development:** Kurzfristige Fertigstellung des MVP für **"Real Estate Creative – Visualizer"** (Fokus: KI-Bildgenerierung/Virtual Staging statt Text/PDF).
-- **Naming:** Das Projekt wird strategisch als "Visualizer" positioniert, um den "Magic Moment" der Bildoptimierung in den Vordergrund zu stellen.
+- **Product Development:** Kurzfristige Fertigstellung des MVP für **"Real Estate Creative – Visualizer"** (Fokus: KI-Bildgenerierung/Virtual Staging).
+- **Naming:** "Visualizer" positioniert den "Magic Moment" der Bildoptimierung.
 
 ## Core Client/Strategy Decisions
-- **Dojan's Focus (Q1 2026):** Gastro Lead Magnet, Real Estate Creative Visualizer, Healthcare Trust-Signal.
+- **Dojan's Focus (Q1 2026):** Gastro Lead Magnet, Real Estate Creative Visualizer, Healthcare Trust-Signal, HHeyBKK/FTC Launch.
+- **Group Policy (HHeyBKK):** In dieser Gruppe geht es primär um HHeyBKK/Patrick-relevante Themen (Gastro, Immo, FTC). Gastro/YC Social nur besprechen, wenn Patrick explizit involviert ist oder es das Projekt betrifft. (Updated 2026-02-27)
 - **Gastro Project Headline:** "Starten Sie heute mit einem Onepager – skalierbar bis zum vollautomatisierten System." (Updated 2026-02-13)
 
 ## System Setup / Configuration (Updated 2026-02-14)
@@ -24,13 +40,10 @@
 - **Oura Integration:** Successfully re-connected via OAuth2 (2026-02-19). Tokens stored in `memory/oura-auth.json`. Daily briefings at 08:30 are automated.
 - **Playwright:** Installed on VPS. Successfully used for automated form testing.
 - **GitHub:** Code corrections for form field IDs (Names/IDs added) pushed to `main`.
-- **Reporting:** Always include the full session status at the end of EVERY message using the following format:
+- **Reporting:** Always include the full session status at the end of EVERY message using the format below, **EXCEPT in the Telegram group "HHeyBKK"**, where the status should be omitted.
     ```
     📊 **OpenClaw Status**
-    🧠 Model: {model}
-    🧮 Tokens: {in} / {out}
-    💰 Cost: {estimated_cost}
-    📚 Context: {current}/{max} ({percentage}%)
+    ...
     ```
     (Updated 2026-02-22: Removed Time to avoid confusion)
 - **Config Safety Policy (2026-02-21):** To prevent Gateway crashes, YunAI will:
