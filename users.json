@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": "user_01",
+      "name": "Test User 1",
+      "pin": "1234",
+      "role": "staff"
+    },
+    {
+      "id": "user_02",
+      "name": "Test User 2",
+      "pin": "5678",
+      "role": "staff"
+    },
+    {
+      "id": "admin_01",
+      "name": "Kevin Giang",
+      "pin": "0000",
+      "role": "admin"
+    }
+  ]
+}
