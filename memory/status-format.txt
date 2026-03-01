@@ -1,8 +1,0 @@
-### 📊 **YunAI Session-Status**
-
-*   **Modell:** [MODEL] 🧠
-*   **Token-Verbrauch:**
-    *   📥 **Input:** [INPUT]k
-    *   📤 **Output:** [OUTPUT]k
-*   **Kontext-Auslastung:** [CONTEXT_PERC]% ([CONTEXT_USED]k/[CONTEXT_TOTAL]m) 📚
-*   **Status:** [STATUS] 🚀

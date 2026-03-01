@@ -1,8 +1,0 @@
-{
-  "access_token": "_0XBPWQQ_5fa97d20-c9e4-49a0-94d1-58e42c758a8b",
-  "refresh_token": "_1XBPWQQ_d04d6fec-b8ed-4c9d-baa1-7b8462e8c89a",
-  "expires_in": 2591999,
-  "scope": "extapi:email extapi:personal extapi:daily extapi:heartrate extapi:tag extapi:workout extapi:session extapi:spo2 extapi:ring_configuration extapi:stress extapi:heart_health",
-  "token_type": "bearer",
-  "obtained_at": 1771469700000
-}
