@@ -1,0 +1,109 @@
+{
+  "categories": [
+    {
+      "name": "Verpackung & To-Go",
+      "items": [
+        {"name": "0,4 Becher", "unit": "Stk", "min": 100, "target": 500},
+        {"name": "0,7 Becher", "unit": "Stk", "min": 100, "target": 500},
+        {"name": "Deckel flach", "unit": "Stk", "min": 100, "target": 500},
+        {"name": "Deckel hoch", "unit": "Stk", "min": 100, "target": 500},
+        {"name": "Deckel nr.7", "unit": "Stk", "min": 100, "target": 500},
+        {"name": "Falzservietten", "unit": "Pck", "min": 5, "target": 20},
+        {"name": "To Go Löffel", "unit": "Stk", "min": 100, "target": 500},
+        {"name": "Prägeservietten", "unit": "Pck", "min": 5, "target": 20},
+        {"name": "Strohhalm", "unit": "Pck", "min": 5, "target": 20},
+        {"name": "Tüten", "unit": "Stk", "min": 50, "target": 200},
+        {"name": "Kaffeedeckel klein", "unit": "Stk", "min": 50, "target": 200},
+        {"name": "Kaffeedeckel groß", "unit": "Stk", "min": 50, "target": 200},
+        {"name": "Stempelkarten", "unit": "Stk", "min": 100, "target": 500},
+        {"name": "Stempelkissen", "unit": "Stk", "min": 1, "target": 2},
+        {"name": "Bonrollen", "unit": "Stk", "min": 5, "target": 20},
+        {"name": "Siegelfolie", "unit": "Rollen", "min": 2, "target": 10}
+      ]
+    },
+    {
+      "name": "Reinigung & Hygiene",
+      "items": [
+        {"name": "Putzutensilien", "unit": "Stk", "min": 1, "target": 5},
+        {"name": "Müllsäcke 120L", "unit": "Rollen", "min": 2, "target": 10},
+        {"name": "Müllsäcke 60L", "unit": "Rollen", "min": 2, "target": 10},
+        {"name": "Desinfektionsreiniger", "unit": "Flaschen", "min": 2, "target": 6},
+        {"name": "Spülmittel", "unit": "Flaschen", "min": 2, "target": 6},
+        {"name": "WC Reiniger", "unit": "Flaschen", "min": 2, "target": 6},
+        {"name": "Handseife", "unit": "Flaschen", "min": 2, "target": 6},
+        {"name": "Glasreiniger", "unit": "Flaschen", "min": 2, "target": 6},
+        {"name": "Schwamm", "unit": "Stk", "min": 5, "target": 20},
+        {"name": "Schwammtücher", "unit": "Stk", "min": 5, "target": 20},
+        {"name": "Toilettenpapier", "unit": "Rollen", "min": 12, "target": 48},
+        {"name": "Handpapier", "unit": "Pck", "min": 5, "target": 20}
+      ]
+    },
+    {
+      "name": "Zutaten & Food",
+      "items": [
+        {"name": "Frozen Berries", "unit": "kg", "min": 2, "target": 10},
+        {"name": "Frozen Erdbeere", "unit": "kg", "min": 2, "target": 10},
+        {"name": "Pfirsichscheiben", "unit": "Dosen", "min": 3, "target": 12},
+        {"name": "Kaffeebohnen", "unit": "kg", "min": 2, "target": 10},
+        {"name": "Kaffeepulver", "unit": "Pck", "min": 2, "target": 6},
+        {"name": "Normale Eier", "unit": "Stk", "min": 30, "target": 120},
+        {"name": "Bio Eier", "unit": "Stk", "min": 30, "target": 120},
+        {"name": "Mehl", "unit": "kg", "min": 5, "target": 20},
+        {"name": "Kokosraspeln", "unit": "kg", "min": 1, "target": 5},
+        {"name": "Brauner Zucker", "unit": "kg", "min": 5, "target": 20},
+        {"name": "Mandeln gehobelt", "unit": "kg", "min": 1, "target": 5},
+        {"name": "Oreo", "unit": "Pck", "min": 5, "target": 20},
+        {"name": "Yoghurt griechischer Art", "unit": "Eimer", "min": 2, "target": 6},
+        {"name": "Ginger Ale", "unit": "Flaschen", "min": 12, "target": 48},
+        {"name": "Ginger Beer", "unit": "Flaschen", "min": 12, "target": 48},
+        {"name": "Kondensmilch gezuckert", "unit": "Dosen", "min": 5, "target": 20},
+        {"name": "Mango Erdbeerkonfitüre", "unit": "Gläser", "min": 2, "target": 10},
+        {"name": "Holunder Sirup", "unit": "Flaschen", "min": 2, "target": 10},
+        {"name": "Lime", "unit": "kg", "min": 1, "target": 5},
+        {"name": "Minze", "unit": "Bund", "min": 5, "target": 20},
+        {"name": "Ingwer", "unit": "kg", "min": 1, "target": 5},
+        {"name": "H-Milch laktosefrei", "unit": "Liter", "min": 6, "target": 24},
+        {"name": "Milch Hafermilch Sojamilch", "unit": "Liter", "min": 6, "target": 24},
+        {"name": "Sahne", "unit": "Liter", "min": 2, "target": 10},
+        {"name": "Litschi Saft", "unit": "Liter", "min": 6, "target": 24},
+        {"name": "Mango Saft", "unit": "Liter", "min": 6, "target": 24},
+        {"name": "Kokosmilch", "unit": "Dosen", "min": 5, "target": 20},
+        {"name": "Kokoseis", "unit": "Liter", "min": 2, "target": 10},
+        {"name": "weißer Zucker", "unit": "kg", "min": 5, "target": 20},
+        {"name": "Mangopüree", "unit": "Dosen", "min": 3, "target": 12}
+      ]
+    },
+    {
+      "name": "Bubble Tea Specials",
+      "items": [
+        {"name": "Tapioca", "unit": "kg", "min": 5, "target": 20},
+        {"name": "Crystal Boba", "unit": "kg", "min": 2, "target": 10},
+        {"name": "Popping Boba Erdbeere", "unit": "kg", "min": 2, "target": 10},
+        {"name": "Popping Boba Blueberry", "unit": "kg", "min": 2, "target": 10},
+        {"name": "Popping Boba Mango", "unit": "kg", "min": 2, "target": 10},
+        {"name": "Popping Boba Litchi", "unit": "kg", "min": 2, "target": 10},
+        {"name": "Litchi Jelly", "unit": "kg", "min": 2, "target": 10},
+        {"name": "Grasjelly", "unit": "Dosen", "min": 5, "target": 20},
+        {"name": "Sirup Brown Sugar", "unit": "Liter", "min": 2, "target": 10},
+        {"name": "Maracuja Litschi Pfirsich Mango Sirup", "unit": "Liter", "min": 2, "target": 10},
+        {"name": "Fructose", "unit": "kg", "min": 5, "target": 20},
+        {"name": "Taro", "unit": "kg", "min": 2, "target": 10},
+        {"name": "Kaffeeweißer", "unit": "kg", "min": 2, "target": 10}
+      ]
+    },
+    {
+      "name": "Tee & Specials",
+      "items": [
+        {"name": "Roasted Oolong Tee", "unit": "kg", "min": 1, "target": 5},
+        {"name": "Blacktee", "unit": "kg", "min": 1, "target": 5},
+        {"name": "Jasmintee", "unit": "kg", "min": 1, "target": 5},
+        {"name": "Milo", "unit": "Dosen", "min": 2, "target": 10},
+        {"name": "Grasjelly Milkys", "unit": "Stk", "min": 10, "target": 50},
+        {"name": "Kokosnusswasser", "unit": "Liter", "min": 6, "target": 24},
+        {"name": "Thai Green Tea", "unit": "kg", "min": 1, "target": 5},
+        {"name": "Matcha Pulver", "unit": "kg", "min": 0.5, "target": 2},
+        {"name": "Co2 Flaschen 2kg", "unit": "Stk", "min": 1, "target": 3}
+      ]
+    }
+  ]
+}

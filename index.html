@@ -3,295 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FIT TO CLOSE | 5H Performance Masterclass Bangkok</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <title>PANKAI | Admin Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        :root {
-            --bg: #0a0a0a;
-            --text: #ffffff;
-            --accent: #ceff00; /* Electric Lime */
-            --muted: #444;
-            --mono: 'JetBrains Mono', monospace;
-            --display: 'Archivo Black', sans-serif;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: var(--bg);
-            color: var(--text);
-            font-family: var(--mono);
-            line-height: 1.5;
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        /* Brutalist Grid Background */
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: 
-                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-            background-size: 40px 40px;
-            z-index: -1;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        /* Navigation */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 2rem 0;
-            text-transform: uppercase;
-            font-size: 0.8rem;
-            letter-spacing: 0.1em;
-        }
-
-        .logo {
-            font-family: var(--display);
-            font-size: 1.5rem;
-            color: var(--accent);
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-        }
-
-        .nav-links a {
-            color: var(--text);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: var(--accent);
-        }
-
-        /* Hero Section */
-        header {
-            height: 80vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            position: relative;
-        }
-
-        h1 {
-            font-family: var(--display);
-            font-size: clamp(4rem, 12vw, 10rem);
-            line-height: 0.85;
-            text-transform: uppercase;
-            margin-bottom: 2rem;
-            letter-spacing: -0.02em;
-            animation: slideIn 1s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
-        .hero-tagline {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            max-width: 600px;
-        }
-
-        .badge {
-            display: inline-block;
-            background: var(--accent);
-            color: var(--bg);
-            padding: 0.2rem 0.6rem;
-            font-weight: 700;
-            width: fit-content;
-            font-size: 0.9rem;
-        }
-
-        .hero-desc {
-            font-size: 1.2rem;
-            color: var(--muted);
-            text-transform: uppercase;
-        }
-
-        /* The Stack Section */
-        .stack-section {
-            padding: 8rem 0;
-            border-top: 1px solid var(--muted);
-        }
-
-        .section-header {
-            margin-bottom: 4rem;
-        }
-
-        .section-header h2 {
-            font-family: var(--display);
-            font-size: 3rem;
-            text-transform: uppercase;
-            color: var(--accent);
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-
-        .card {
-            border: 1px solid var(--muted);
-            padding: 2rem;
-            transition: transform 0.3s, border-color 0.3s;
-            position: relative;
-            background: var(--bg);
-        }
-
-        .card:hover {
-            border-color: var(--accent);
-            transform: translateY(-5px);
-        }
-
-        .card-num {
-            font-size: 0.8rem;
-            color: var(--accent);
-            margin-bottom: 1rem;
-            display: block;
-        }
-
-        .card h3 {
-            font-family: var(--display);
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-        }
-
-        /* CTA Section */
-        .cta-section {
-            padding: 10rem 0;
-            text-align: center;
-            background: var(--accent);
-            color: var(--bg);
-            clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
-        }
-
-        .cta-section h2 {
-            font-family: var(--display);
-            font-size: 5rem;
-            text-transform: uppercase;
-            margin-bottom: 2rem;
-        }
-
-        .btn {
-            display: inline-block;
-            background: var(--bg);
-            color: var(--accent);
-            padding: 1.5rem 4rem;
-            text-decoration: none;
-            font-family: var(--display);
-            font-size: 1.5rem;
-            text-transform: uppercase;
-            transition: transform 0.2s;
-        }
-
-        .btn:hover {
-            transform: scale(1.05);
-        }
-
-        footer {
-            padding: 4rem 0;
-            text-align: center;
-            font-size: 0.7rem;
-            color: var(--muted);
-            text-transform: uppercase;
-            letter-spacing: 0.2em;
-        }
-
-        /* Animations */
-        @keyframes slideIn {
-            from { transform: translateX(-50px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-
-        @media (max-width: 768px) {
-            h1 { font-size: 4rem; }
-            .cta-section h2 { font-size: 2.5rem; }
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: #ffffff; }
+        .neon-text { color: #00f3ff; text-shadow: 0 0 10px rgba(0,243,255,0.5); }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .status-red { background: #ef4444; box-shadow: 0 0 10px rgba(239, 68, 68, 0.5); }
+        .status-yellow { background: #f59e0b; box-shadow: 0 0 10px rgba(245, 158, 11, 0.5); }
+        .status-green { background: #10b981; box-shadow: 0 0 10px rgba(16, 185, 129, 0.5); }
     </style>
 </head>
-<body>
-
-    <div class="container">
-        <nav>
-            <div class="logo">FTC</div>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#program">Program</a>
-                <a href="#contact">Contact</a>
+<body class="p-6 md:p-12">
+    <div class="max-w-6xl mx-auto">
+        <header class="flex justify-between items-center mb-12">
+            <div>
+                <h1 class="text-5xl font-800 tracking-tighter neon-text">PANKAI</h1>
+                <p class="text-gray-500 text-xs uppercase tracking-widest mt-1">Admin Intelligence — Hamburg</p>
             </div>
-        </nav>
-
-        <header>
-            <div class="badge">BANGKOK 2026</div>
-            <h1>FIT TO<br>CLOSE</h1>
-            <div class="hero-tagline">
-                <p class="hero-desc">The 5H Performance Masterclass for high-stakes closers & sales leaders.</p>
-                <p>Mindset. Movement. Nutrition. Sales Closing.</p>
+            <div class="text-right hidden md:block">
+                <p class="text-[10px] text-gray-500 uppercase tracking-widest">Authentifiziert als</p>
+                <p class="font-600 text-lg">KEVIN GIANG 🌟</p>
             </div>
         </header>
 
-        <section id="program" class="stack-section">
-            <div class="section-header">
-                <h2>THE 5H STACK</h2>
+        <!-- Stats -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="glass p-8 rounded-[2rem]">
+                <p class="text-gray-500 text-[10px] uppercase tracking-widest mb-3">Bestand Total</p>
+                <p class="text-4xl font-bold">87 <span class="text-sm font-normal text-gray-500">ARTIKEL</span></p>
             </div>
-            <div class="grid">
-                <div class="card">
-                    <span class="card-num">01 / MINDSET</span>
-                    <h3>BREATHWORK</h3>
-                    <p>Controlled stress response for high-pressure negotiations.</p>
-                </div>
-                <div class="card">
-                    <span class="card-num">02 / MOVEMENT</span>
-                    <h3>PERFORMANCE</h3>
-                    <p>Gym & Yoga designed for endurance and mental clarity.</p>
-                </div>
-                <div class="card">
-                    <span class="card-num">03 / FUEL</span>
-                    <h3>NUTRITION</h3>
-                    <p>Strategic eating protocols to master the sales day.</p>
-                </div>
-                <div class="card">
-                    <span class="card-num">04 / REVENUE</span>
-                    <h3>THE CLOSE</h3>
-                    <p>Advanced strategies for closing high-ticket deals.</p>
+            <div class="glass p-8 rounded-[2rem] border-l-4 border-red-500/50">
+                <p class="text-red-500/80 text-[10px] uppercase tracking-widest mb-3">Bestands-Warnung</p>
+                <p class="text-4xl font-bold text-red-500">5 <span class="text-sm font-normal text-gray-500">ITEMS KRITISCH</span></p>
+            </div>
+            <div class="glass p-8 rounded-[2rem]">
+                <p class="text-gray-500 text-[10px] uppercase tracking-widest mb-3">Kategorien</p>
+                <p class="text-4xl font-bold">5 <span class="text-sm font-normal text-gray-500">BEREICHE</span></p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Example: Packaging Category -->
+            <div class="glass p-10 rounded-[2.5rem]">
+                <h2 class="text-xl font-bold mb-8 flex items-center uppercase tracking-tight">
+                    <span class="w-2 h-2 rounded-full bg-cyan-400 mr-3 shadow-[0_0_10px_#00f3ff]"></span> Bubble Tea Specials
+                </h2>
+                <div class="space-y-6">
+                    <div class="flex justify-between items-center group">
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 rounded-full status-red mr-5"></div>
+                            <div>
+                                <p class="font-600 text-lg">Tapioca (kg)</p>
+                                <p class="text-xs text-gray-500">Lager: 4 / Soll: 20</p>
+                            </div>
+                        </div>
+                        <button class="bg-white/5 px-5 py-2.5 rounded-xl text-[10px] font-bold uppercase tracking-widest hover:bg-white/10 transition">Bestellen</button>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 rounded-full status-yellow mr-5"></div>
+                            <div>
+                                <p class="font-600 text-lg">Crystal Boba</p>
+                                <p class="text-xs text-gray-500">Lager: 3 / Soll: 10</p>
+                            </div>
+                        </div>
+                        <p class="text-[10px] font-bold text-yellow-500 uppercase tracking-widest">Nachbestellen</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 rounded-full status-green mr-5"></div>
+                            <div>
+                                <p class="font-600 text-lg">Popping Boba Mango</p>
+                                <p class="text-xs text-gray-500">Lager: 12 / Soll: 10</p>
+                            </div>
+                        </div>
+                        <p class="text-[10px] font-bold text-green-500 uppercase tracking-widest">OK</p>
+                    </div>
                 </div>
             </div>
-        </section>
+
+            <!-- Example: Ingredients Category -->
+            <div class="glass p-10 rounded-[2.5rem]">
+                <h2 class="text-xl font-bold mb-8 flex items-center uppercase tracking-tight">
+                    <span class="w-2 h-2 rounded-full bg-white mr-3"></span> Tee & Specials
+                </h2>
+                <div class="space-y-6">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 rounded-full status-red mr-5"></div>
+                            <div>
+                                <p class="font-600 text-lg">Jasmintee (kg)</p>
+                                <p class="text-xs text-gray-500">Lager: 0.8 / Soll: 5</p>
+                            </div>
+                        </div>
+                        <button class="bg-white/5 px-5 py-2.5 rounded-xl text-[10px] font-bold uppercase tracking-widest hover:bg-white/10 transition">Bestellen</button>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 rounded-full status-green mr-5"></div>
+                            <div>
+                                <p class="font-600 text-lg">Co2 Flaschen 2kg</p>
+                                <p class="text-xs text-gray-500">Lager: 3 / Soll: 3</p>
+                            </div>
+                        </div>
+                        <p class="text-[10px] font-bold text-green-500 uppercase tracking-widest">OK</p>
+                    </div>
+                </div>
+                <button class="w-full mt-12 py-5 bg-white/5 hover:bg-white/10 border border-white/5 rounded-2xl text-[10px] uppercase tracking-[0.3em] font-bold transition">Alle Kategorien anzeigen</button>
+            </div>
+        </div>
     </div>
-
-    <section class="cta-section">
-        <div class="container">
-            <h2>JOIN THE CORE</h2>
-            <a href="#" class="btn">APPLY NOW</a>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 YOUNG CREATIVES x FIT TO CLOSE | ALL RIGHTS RESERVED.</p>
-        </div>
-    </footer>
-
 </body>
 </html>
