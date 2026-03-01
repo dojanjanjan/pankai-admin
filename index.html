@@ -11,11 +11,6 @@
         :root {
             --pankai-black: #000000;
             --pankai-white: #ffffff;
-            --pankai-gray: #1a1a1a;
-            --pankai-accent: #ffffff; /* Das Menü ist primär S/W */
-            --status-red: #ff3b30;
-            --status-yellow: #ffcc00;
-            --status-green: #34c759;
         }
 
         body { 
@@ -25,8 +20,6 @@
             letter-spacing: -0.02em;
         }
 
-        .menu-font { font-family: 'Space Grotesk', sans-serif; }
-        
         .header-box {
             background-color: var(--pankai-white);
             color: var(--pankai-black);
@@ -37,18 +30,6 @@
             letter-spacing: 0.1em;
         }
 
-        .card-pankai {
-            border: 1px solid #333;
-            background: #080808;
-            border-radius: 0; /* Menü hat eher harte Kanten oder sehr subtile Radien */
-        }
-
-        .divider {
-            height: 1px;
-            background: linear-gradient(90deg, #333 0%, #111 100%);
-            margin: 1.5rem 0;
-        }
-
         .stat-value {
             font-size: 3.5rem;
             font-weight: 900;
@@ -56,17 +37,23 @@
             font-family: 'Space Grotesk', sans-serif;
         }
 
-        /* Scanline Effekt für den Urban Vibe */
-        body::before {
-            content: " ";
-            display: block;
-            position: fixed;
-            top: 0; left: 0; bottom: 0; right: 0;
-            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-            z-index: 2000;
-            background-size: 100% 2px, 3px 100%;
-            pointer-events: none;
-            opacity: 0.1;
+        /* Logo Simulation Style */
+        .logo-frame {
+            border: 4px solid white;
+            padding: 10px;
+            display: inline-block;
+            font-weight: 900;
+            line-height: 0.8;
+            text-align: left;
+        }
+
+        .vertical-text {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            font-size: 1.5rem;
+            letter-spacing: -0.1em;
+            border-left: 4px solid white;
+            padding-left: 5px;
         }
 
     </style>
@@ -74,109 +61,97 @@
 <body class="p-4 md:p-8 min-h-screen">
     <div class="max-w-4xl mx-auto">
         
-        <!-- Top Nav / Branding -->
-        <header class="flex justify-between items-end mb-12 border-b-4 border-white pb-6">
-            <div>
-                <div class="header-box mb-2 text-xs">Intelligence System</div>
-                <h1 class="text-6xl font-900 tracking-tighter uppercase leading-none">PANKAI<span class="text-outline">.</span></h1>
+        <!-- PANKAI LOGO ADAPTION -->
+        <header class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 border-b-8 border-white pb-8">
+            <div class="flex items-center gap-6">
+                <!-- Symbolik des Logos: Quadratischer Frame + Text -->
+                <div class="border-[6px] border-white p-4 hidden md:block">
+                     <div class="w-16 h-16 bg-white flex items-center justify-center">
+                        <span class="text-black text-4xl font-900">P</span>
+                     </div>
+                </div>
+                <div>
+                    <h1 class="text-7xl font-900 tracking-tighter uppercase leading-none mb-2">PANKAI</h1>
+                    <div class="header-box text-[10px]">Restaurant Intelligence System</div>
+                </div>
             </div>
-            <div class="text-right hidden md:block">
-                <p class="text-[10px] uppercase tracking-[0.4em] text-gray-500 mb-1">Authenticated</p>
-                <p class="font-bold text-xl uppercase">Kevin Giang</p>
+            <div class="text-right mt-6 md:mt-0">
+                <p class="text-[10px] uppercase tracking-[0.5em] text-gray-500 mb-1">Hamburg Edition</p>
+                <p class="font-bold text-2xl uppercase">Kevin Giang 🌟</p>
             </div>
         </header>
 
-        <!-- Main Stats - Bold like the Menu Titles -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-            <div class="p-2">
-                <p class="text-[10px] uppercase tracking-widest text-gray-500 mb-2">Team Live</p>
-                <p class="stat-value">04</p>
+        <!-- Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+            <div class="group">
+                <p class="text-[10px] uppercase tracking-[0.3em] text-gray-500 mb-3 border-l-2 border-white pl-2">Team Live</p>
+                <p class="stat-value group-hover:italic transition-all">04</p>
             </div>
-            <div class="p-2 border-l border-white/20">
-                <p class="text-[10px] uppercase tracking-widest text-red-500 mb-2 font-bold italic">Critical</p>
-                <p class="stat-value text-red-500">03</p>
+            <div class="group">
+                <p class="text-[10px] uppercase tracking-[0.3em] text-red-600 mb-3 border-l-2 border-red-600 pl-2 font-bold">Alerts</p>
+                <p class="stat-value text-red-600">03</p>
             </div>
-            <div class="p-2 border-l border-white/20">
-                <p class="text-[10px] uppercase tracking-widest text-gray-500 mb-2">Receipts</p>
-                <p class="stat-value text-white/40">12</p>
+            <div class="group">
+                <p class="text-[10px] uppercase tracking-[0.3em] text-gray-500 mb-3 border-l-2 border-white pl-2">Docs</p>
+                <p class="stat-value text-white/20">12</p>
             </div>
-            <div class="p-2 border-l border-white/20">
-                <p class="text-[10px] uppercase tracking-widest text-gray-500 mb-2">Efficiency</p>
-                <p class="stat-value">98<span class="text-xl">%</span></p>
+            <div class="group">
+                <p class="text-[10px] uppercase tracking-[0.3em] text-gray-500 mb-3 border-l-2 border-white pl-2">Ready</p>
+                <p class="stat-value">100<span class="text-xl">%</span></p>
             </div>
         </div>
 
-        <!-- Inventory List - Replicating Menu Style -->
-        <div class="mb-12">
-            <div class="flex items-center mb-6">
-                <div class="header-box text-sm">Bestands-Check / Inventory</div>
-            </div>
+        <!-- Inventory Header -->
+        <div class="bg-white text-black p-4 mb-8 flex justify-between items-center">
+            <h2 class="text-2xl font-900 uppercase tracking-tighter">Inventory / Bestands-Check</h2>
+            <span class="text-xs font-bold uppercase tracking-widest">Live Sync OK</span>
+        </div>
             
-            <div class="space-y-1">
-                <!-- Header Labels -->
-                <div class="flex justify-between text-[9px] uppercase tracking-[0.2em] text-gray-500 px-4 mb-2">
-                    <span>Item Name</span>
-                    <span>Status / Qty</span>
-                </div>
-
-                <!-- List Items -->
-                <div class="flex justify-between items-center bg-white/5 p-4 group hover:bg-white/10 transition">
-                    <div class="flex items-center">
-                        <div class="w-2 h-2 bg-red-500 mr-4 shadow-[0_0_8px_#ff3b30]"></div>
-                        <div>
-                            <p class="font-bold text-lg uppercase menu-font">Tapioca (kg)</p>
-                            <p class="text-[10px] text-gray-500 uppercase italic">Bubble Tea Special</p>
-                        </div>
-                    </div>
-                    <div class="text-right">
-                        <p class="text-xl font-bold">4.0 <span class="text-xs text-gray-500">/ 20</span></p>
-                        <p class="text-[9px] text-red-500 font-bold uppercase italic">Action Required</p>
+        <!-- Inventory List -->
+        <div class="space-y-4 mb-16">
+            <div class="flex justify-between items-center border-b border-white/10 pb-4">
+                <div class="flex items-center gap-4">
+                    <div class="w-4 h-4 bg-red-600"></div>
+                    <div>
+                        <p class="text-xl font-900 uppercase italic">Tapioca Pearls</p>
+                        <p class="text-[10px] text-gray-500 uppercase font-bold tracking-widest">Bubble Tea / Special</p>
                     </div>
                 </div>
+                <div class="text-right">
+                    <p class="text-2xl font-bold">4.0 <span class="text-sm text-gray-500">/ 20 KG</span></p>
+                    <button class="bg-white text-black text-[9px] font-900 px-3 py-1 mt-1 uppercase hover:bg-red-600 hover:text-white transition">Order Now</button>
+                </div>
+            </div>
 
-                <div class="flex justify-between items-center bg-white/5 p-4 group hover:bg-white/10 transition border-t border-black">
-                    <div class="flex items-center">
-                        <div class="w-2 h-2 bg-yellow-400 mr-4 shadow-[0_0_8px_#ffcc00]"></div>
-                        <div>
-                            <p class="font-bold text-lg uppercase menu-font">0,4 Becher</p>
-                            <p class="text-[10px] text-gray-500 uppercase italic">Packaging</p>
-                        </div>
-                    </div>
-                    <div class="text-right">
-                        <p class="text-xl font-bold">120 <span class="text-xs text-gray-500">/ 500</span></p>
-                        <p class="text-[9px] text-yellow-400 font-bold uppercase italic">Low Stock</p>
+            <div class="flex justify-between items-center border-b border-white/10 pb-4">
+                <div class="flex items-center gap-4">
+                    <div class="w-4 h-4 bg-yellow-500"></div>
+                    <div>
+                        <p class="text-xl font-900 uppercase italic">0,4L Cups</p>
+                        <p class="text-[10px] text-gray-500 uppercase font-bold tracking-widest">Packaging / To-Go</p>
                     </div>
                 </div>
-
-                <div class="flex justify-between items-center bg-white/5 p-4 group hover:bg-white/10 transition border-t border-black">
-                    <div class="flex items-center">
-                        <div class="w-2 h-2 bg-green-500 mr-4 shadow-[0_0_8px_#34c759]"></div>
-                        <div>
-                            <p class="font-bold text-lg uppercase menu-font">Jasmintee</p>
-                            <p class="text-[10px] text-gray-500 uppercase italic">Tea & Specials</p>
-                        </div>
-                    </div>
-                    <div class="text-right">
-                        <p class="text-xl font-bold text-white/40">4.5 <span class="text-xs text-gray-500">/ 5</span></p>
-                        <p class="text-[9px] text-green-500 font-bold uppercase italic tracking-tighter">Optimal</p>
-                    </div>
+                <div class="text-right">
+                    <p class="text-2xl font-bold">120 <span class="text-sm text-gray-500">/ 500 PCS</span></p>
+                    <p class="text-[10px] text-yellow-500 font-bold uppercase">Restock soon</p>
                 </div>
             </div>
         </div>
 
-        <!-- Team Login Area -->
-        <div class="bg-white p-8 text-black mb-12">
-            <h2 class="text-2xl font-900 uppercase tracking-tighter mb-4">Team Access</h2>
-            <div class="grid grid-cols-4 gap-2">
-                <input type="password" placeholder="PIN" class="col-span-3 border-2 border-black p-4 text-2xl font-bold focus:outline-none" readonly value="****">
-                <button class="bg-black text-white font-bold uppercase">Enter</button>
+        <!-- Team Access -->
+        <div class="border-4 border-white p-8 mb-20">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-3xl font-900 uppercase tracking-tighter italic">Team Access</h2>
+                <div class="w-12 h-1 border-t-4 border-white"></div>
             </div>
-            <p class="text-[10px] uppercase mt-4 tracking-widest font-bold">System ready for deployment Hamburg 2026</p>
+            <div class="flex gap-4">
+                <div class="flex-1 bg-white/5 border border-white/20 p-4 text-3xl font-bold tracking-[0.5em] text-center">****</div>
+                <button class="bg-white text-black px-8 font-900 uppercase hover:invert transition">Login</button>
+            </div>
         </div>
 
-        <!-- Footer Visual -->
-        <footer class="opacity-20 mt-20 text-center">
-            <p class="text-[8px] uppercase tracking-[1em]">Urban Asian Soul — PankAI Hamburg</p>
+        <footer class="text-center opacity-10 pb-10">
+            <p class="text-[10px] uppercase tracking-[1.5em]">Urban Soul / Hamburg 2026</p>
         </footer>
 
     </div>
