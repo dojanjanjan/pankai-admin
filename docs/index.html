@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>PANKAI | Intelligence</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -13,23 +13,30 @@
             color: #ffffff;
             font-family: 'Space Grotesk', sans-serif;
             letter-spacing: -0.02em;
+            overflow-x: hidden;
         }
 
         .ca-phe {
             font-family: 'Playfair Display', serif;
             font-style: italic;
-            font-size: 1.8rem;
+            font-size: 1.2rem;
             line-height: 1;
-            margin-bottom: -0.5rem;
-            margin-left: 4.5rem;
+            margin-bottom: -0.2rem;
+            margin-left: 3rem;
+        }
+        @media (min-width: 768px) {
+            .ca-phe { font-size: 1.8rem; margin-left: 4.5rem; }
         }
 
         .pankai-title {
             font-family: 'Outfit', sans-serif;
             font-weight: 900;
-            font-size: 5rem;
+            font-size: 2.5rem;
             line-height: 0.8;
             letter-spacing: -0.02em;
+        }
+        @media (min-width: 768px) {
+            .pankai-title { font-size: 5rem; }
         }
 
         .vertical-logo-box {
@@ -39,43 +46,40 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 35px;
-            height: 80px;
-            font-size: 10px;
+            width: 25px;
+            height: 60px;
+            font-size: 8px;
             font-weight: 900;
             line-height: 1;
             text-transform: uppercase;
         }
+        @media (min-width: 768px) {
+            .vertical-logo-box { width: 35px; height: 80px; font-size: 10px; }
+        }
 
         .panda-frame {
-            border: 4px solid white;
-            width: 70px;
-            height: 70px;
+            border: 3px solid white;
+            width: 50px;
+            height: 50px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-right: 15px;
+            margin-right: 10px;
         }
-
-        .panda-placeholder {
-            width: 100%;
-            height: 100%;
-            background: white;
-            mask: url('https://upload.wikimedia.org/wikipedia/commons/0/0f/Panda_logo.svg') no-repeat center;
-            -webkit-mask: url('https://upload.wikimedia.org/wikipedia/commons/0/0f/Panda_logo.svg') no-repeat center;
+        @media (min-width: 768px) {
+            .panda-frame { border: 4px solid white; width: 70px; height: 70px; margin-right: 15px; }
         }
 
         .stat-card {
             border: 1px solid rgba(255,255,255,0.1);
-            padding: 2rem;
+            padding: 1.5rem;
             position: relative;
         }
-
         .stat-card::after {
             content: "";
             position: absolute;
             top: 0; right: 0;
-            width: 20px; height: 20px;
+            width: 15px; height: 15px;
             border-top: 2px solid white;
             border-right: 2px solid white;
         }
@@ -85,107 +89,103 @@
             color: black;
             font-weight: 900;
             text-transform: uppercase;
-            padding: 1rem 2rem;
+            padding: 1rem;
             transition: all 0.3s;
+            width: 100%;
+        }
+        @media (min-width: 400px) {
+            .btn-pankai { width: auto; padding: 1rem 2rem; }
         }
 
-        .btn-pankai:hover {
-            background: #ff3b30;
-            color: white;
+        .inventory-item {
+            background: rgba(255,255,255,0.03);
+            border-left: 4px solid transparent;
         }
+        .inventory-item.critical { border-left-color: #ef4444; }
+        .inventory-item.warning { border-left-color: #f59e0b; }
 
     </style>
 </head>
 <body class="p-4 md:p-12 min-h-screen">
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-5xl mx-auto overflow-hidden">
         
-        <!-- PANKAI LOGO HEADER (EXACT REPLICA) -->
-        <header class="mb-20">
-            <div class="flex flex-col items-start">
+        <!-- PANKAI LOGO HEADER -->
+        <header class="mb-12 md:mb-20">
+            <div class="flex flex-col items-start scale-90 origin-left md:scale-100">
                 <div class="ca-phe">cà phê</div>
                 <div class="flex items-center">
-                    <div class="vertical-logo-box mr-4">
+                    <div class="vertical-logo-box mr-3 md:mr-4">
                         <span>P</span><span>A</span><span>N</span><span>K</span><span>A</span><span>I</span>
                     </div>
                     <div class="panda-frame">
-                        <div class="w-full h-full flex items-center justify-center font-900 text-4xl">🐼</div>
+                        <span class="font-900 text-2xl md:text-4xl">🐼</span>
                     </div>
                     <h1 class="pankai-title uppercase">PANKAI</h1>
                 </div>
             </div>
-            <div class="mt-8 border-t-2 border-white/20 pt-4 flex justify-between items-center">
-                <span class="text-[10px] uppercase tracking-[0.6em] text-gray-500 font-bold">Intelligence System v1.0</span>
-                <span class="font-bold text-lg uppercase tracking-tighter italic">Admin: Kevin Giang</span>
+            <div class="mt-6 border-t-2 border-white/20 pt-4 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+                <span class="text-[9px] md:text-[10px] uppercase tracking-[0.4em] md:tracking-[0.6em] text-gray-500 font-bold">Intelligence System v1.0</span>
+                <span class="font-bold text-sm md:text-lg uppercase tracking-tighter italic">Admin: Kevin Giang</span>
             </div>
         </header>
 
         <!-- Stats Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 mb-12 md:mb-20">
             <div class="stat-card">
-                <p class="text-[10px] uppercase tracking-widest text-gray-500 mb-4 font-bold">Team Status</p>
-                <p class="text-6xl font-900">04</p>
-                <p class="text-[10px] text-gray-400 mt-2 uppercase">Staff active in kitchen</p>
+                <p class="text-[9px] uppercase tracking-widest text-gray-500 mb-2 font-bold">Team</p>
+                <p class="text-4xl md:text-6xl font-900">04</p>
             </div>
-            <div class="stat-card border-red-900">
-                <p class="text-[10px] uppercase tracking-widest text-red-600 mb-4 font-bold italic">Critical Items</p>
-                <p class="text-6xl font-900 text-red-600">03</p>
-                <p class="text-[10px] text-red-900 mt-2 uppercase">Immediate restock required</p>
+            <div class="stat-card border-red-900/50">
+                <p class="text-[9px] uppercase tracking-widest text-red-600 mb-2 font-bold italic">Alerts</p>
+                <p class="text-4xl md:text-6xl font-900 text-red-600">03</p>
             </div>
-            <div class="stat-card">
-                <p class="text-[10px] uppercase tracking-widest text-gray-500 mb-4 font-bold">New Invoices</p>
-                <p class="text-6xl font-900 text-white/30">12</p>
-                <p class="text-[10px] text-gray-400 mt-2 uppercase">Pending accounting review</p>
+            <div class="stat-card col-span-2 md:col-span-1">
+                <p class="text-[9px] uppercase tracking-widest text-gray-500 mb-2 font-bold">Invoices</p>
+                <p class="text-4xl md:text-6xl font-900 text-white/30">12</p>
             </div>
         </div>
 
         <!-- Section: Inventory -->
-        <section class="mb-20">
-            <div class="flex justify-between items-end mb-8 border-b border-white pb-4">
-                <h2 class="text-4xl font-900 uppercase italic tracking-tighter">Inventory Check</h2>
-                <div class="text-[10px] uppercase tracking-widest font-bold text-gray-500">Live Update OK</div>
+        <section class="mb-12 md:mb-20">
+            <div class="flex justify-between items-end mb-6 border-b border-white pb-3">
+                <h2 class="text-2xl md:text-4xl font-900 uppercase italic tracking-tighter">Inventory</h2>
+                <div class="text-[8px] uppercase tracking-widest font-bold text-gray-500">Live Sync</div>
             </div>
 
-            <div class="grid gap-4">
-                <!-- Example Items in Menu Style -->
-                <div class="bg-white/5 p-6 flex justify-between items-center group hover:bg-white/10 transition">
-                    <div class="flex items-center gap-6">
-                        <div class="w-1 h-12 bg-red-600"></div>
-                        <div>
-                            <h3 class="text-2xl font-bold uppercase">Tapioca Pearls (Black)</h3>
-                            <p class="text-xs text-gray-500 uppercase font-bold italic">Bubble Tea Specials / Stock A</p>
-                        </div>
+            <div class="grid gap-3">
+                <div class="inventory-item critical p-4 md:p-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                    <div>
+                        <h3 class="text-lg md:text-2xl font-bold uppercase">Tapioca Pearls</h3>
+                        <p class="text-[10px] text-gray-500 uppercase font-bold italic">Bubble Tea Specials</p>
                     </div>
-                    <div class="text-right">
-                        <span class="text-3xl font-900">4.0 <span class="text-sm text-gray-500">/ 20 KG</span></span>
-                        <div class="text-[10px] text-red-600 font-bold uppercase tracking-tighter mt-1 underline decoration-red-600 underline-offset-4">CRITICAL LEVEL</div>
+                    <div class="w-full sm:w-auto flex justify-between sm:block text-right">
+                        <span class="text-2xl md:text-3xl font-900 italic">4.0<span class="text-xs text-gray-500 ml-1">/ 20KG</span></span>
+                        <p class="text-[9px] text-red-600 font-bold uppercase block mt-1 underline underline-offset-2">CRITICAL</p>
                     </div>
                 </div>
 
-                <div class="bg-white/5 p-6 flex justify-between items-center group hover:bg-white/10 transition">
-                    <div class="flex items-center gap-6">
-                        <div class="w-1 h-12 bg-yellow-500"></div>
-                        <div>
-                            <h3 class="text-2xl font-bold uppercase">0,4L Cold Drink Cups</h3>
-                            <p class="text-xs text-gray-500 uppercase font-bold italic">Packaging & To-Go</p>
-                        </div>
+                <div class="inventory-item warning p-4 md:p-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                    <div>
+                        <h3 class="text-lg md:text-2xl font-bold uppercase">0,4L Cups</h3>
+                        <p class="text-[10px] text-gray-500 uppercase font-bold italic">Packaging</p>
                     </div>
-                    <div class="text-right">
-                        <span class="text-3xl font-900">120 <span class="text-sm text-gray-500">/ 500 PCS</span></span>
-                        <div class="text-[10px] text-yellow-500 font-bold uppercase tracking-tighter mt-1 italic">LOW STOCK WARNING</div>
+                    <div class="w-full sm:w-auto flex justify-between sm:block text-right">
+                        <span class="text-2xl md:text-3xl font-900 italic">120<span class="text-xs text-gray-500 ml-1">/ 500</span></span>
+                        <p class="text-[9px] text-yellow-500 font-bold uppercase block mt-1">LOW STOCK</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Access / Footer -->
-        <section class="border-t-4 border-white pt-12 pb-20">
+        <!-- Access -->
+        <section class="border-t-4 border-white pt-8 pb-12">
              <div class="max-w-md">
-                <h3 class="text-2xl font-900 uppercase italic mb-6">Staff Terminal Access</h3>
-                <div class="flex border-2 border-white">
-                    <input type="password" class="bg-transparent flex-1 p-4 text-2xl font-bold tracking-[0.5em] focus:outline-none" value="****" readonly>
-                    <button class="btn-pankai">Unlock</button>
+                <h3 class="text-xl md:text-2xl font-900 uppercase italic mb-4">Staff Terminal</h3>
+                <div class="flex flex-col sm:flex-row border-2 border-white">
+                    <input type="password" class="bg-transparent flex-1 p-4 text-xl md:text-2xl font-bold tracking-[0.5em] focus:outline-none min-w-0" value="****" readonly>
+                    <button class="btn-pankai sm:w-auto border-t-2 sm:border-t-0 sm:border-l-2 border-white">Unlock</button>
                 </div>
-                <p class="text-[9px] uppercase mt-4 text-gray-600 tracking-[0.3em]">Authorized personal only. Hamburg 2026.</p>
+                <p class="text-[8px] uppercase mt-3 text-gray-600 tracking-[0.2em]">Authorized only. Hamburg 2026.</p>
              </div>
         </section>
 
